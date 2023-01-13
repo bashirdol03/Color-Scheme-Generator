@@ -34,19 +34,19 @@ document.getElementById("color-form").addEventListener("submit", e =>
     
    e.preventDefault()
     
-     color = document.getElementById("hex-color").value
+     let pickedColor = document.getElementById("hex-color").value
+     color = pickedColor.substring(1)
      mode = document.getElementById("color-mode").value
     
     
-    console.log(color)
-    console.log(mode)
-    
-    fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=${mode}&count=5`)
+   fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=${mode}&count=5`)
    .then(res => res.json())
    .then(data => {
              colorsDataArray = data.colors
              render()
+             
              })
+       
     
     
 
