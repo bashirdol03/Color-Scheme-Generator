@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.colors-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    
+    
+}
+.color-div{
+    height: 400px;
+    width: 150px;
+}
+
+h3 {
+    text-align: center;
+}
